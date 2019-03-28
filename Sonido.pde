@@ -66,7 +66,7 @@ void draw(){
   
   
     if (key ==  '0'){
-       if( peanuts.isPlaying() | EscenaLisa.isPlaying() | annie.isPlaying() | space.isPlaying()){
+       if( pulso.isPlaying()| peanuts.isPlaying() | EscenaLisa.isPlaying() | annie.isPlaying() | space.isPlaying()){
        peanuts.pause();
        EscenaLisa.pause();
        annie.pause();
@@ -77,7 +77,8 @@ void draw(){
       estatica();
     }
      if (key == '1'){
-       if( EscenaLisa.isPlaying() | annie.isPlaying() | space.isPlaying()){
+       if( pulso.isPlaying()|EscenaLisa.isPlaying() | annie.isPlaying() | space.isPlaying()){
+         pulso.stop();
        EscenaLisa.pause();
        annie.pause();
        space.pause();
@@ -87,7 +88,8 @@ void draw(){
     channel1();
      }
      if (key == '2'){
-     if( peanuts.isPlaying() | annie.isPlaying() | space.isPlaying()){
+     if(pulso.isPlaying()| peanuts.isPlaying() | annie.isPlaying() | space.isPlaying()){
+        pulso.stop();
        peanuts.pause();
        annie.pause();
        space.pause(); 
@@ -97,7 +99,8 @@ void draw(){
      channel2();
      }
      if (key == '3'){
-       if( peanuts.isPlaying() | EscenaLisa.isPlaying() | space.isPlaying()){
+       if(pulso.isPlaying()| peanuts.isPlaying() | EscenaLisa.isPlaying() | space.isPlaying()){
+       pulso.stop();
        peanuts.pause();
        EscenaLisa.pause();
        space.pause();
@@ -107,7 +110,8 @@ void draw(){
        channel3(); 
      }
      if (key == '4') {
-     if( peanuts.isPlaying() | EscenaLisa.isPlaying() | annie.isPlaying() ){
+     if(pulso.isPlaying()| peanuts.isPlaying() | EscenaLisa.isPlaying() | annie.isPlaying() ){
+        pulso.stop();
        peanuts.pause();
        EscenaLisa.pause();
        annie.pause();
